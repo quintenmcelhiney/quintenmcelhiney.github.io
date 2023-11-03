@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- META -->
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="uisual" content="Made with Uisual (uisual.com)">
-    <meta name="author" content="#">
-    <meta name="description" content="#">
-    <meta name="referrer" content="unsafe-url">
-    <meta name="robots" content="index, follow">
-    <!-- SPEED -->
-    <link rel="preconnect" href="https://res.cloudinary.com">
-    <link rel="dns-prefetch" href="https://res.cloudinary.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <!-- LINK -->
-    <link rel="me" href="#">
-    <link rel="canonical" href="#">
-    <link rel="icon" type="image/png" href="#" sizes="48x48">
-    <!-- PERFORMANCE -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="preload" as="style" href="style.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- TITLE -->
-    <title>Grid: Free Landing Page Template from Uisual</title>
-  </head>
-  <body>
-    <header role="banner" class="ui-section-header">
-      <div class="ui-layout-container">
-        <div class="ui-section-header__layout ui-layout-flex">
-          <!-- LOGO -->
-          <a href="#" role="link" aria-label="#">
-            <svg viewBox="0 0 18 18" height="18" width="18" role="img" aria-label="#">
-              <path fill="#353535" d="M0 0h4.5v9a4.5 4.5 0 109 0V6H18v3A9 9 0 110 9V0zm18 4.5V0h-4.5v4.5H18z"/>
-            </svg>
-          </a>
-          <!-- MENU -->
-          <a href="#" role="link" aria-label="#">
-            <svg viewBox="0 0 24 24" height="18" width="18" fill="none" stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-            </svg>
-          </a>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+            <li class="uk-active"><a href="mailto:">Contact</a></li> <!--- change to ur email-->
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm John Doe, a front-end web developer, <br>graphic designer, and an UI/UX designer.</h1>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+
+
+</section>
+
+<!-- Home Ends -->
+<br>
+
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend posuere tortor vel lobortis. Morbi pretium in sapien non suscipit. Nam ac efficitur enim. Vestibulum accumsan erat sit amet nulla commodo, nec varius felis aliquam. Aliquam suscipit mauris lacus, at euismod purus tempor aliquam. Donec varius sem nisl. Fusce augue tortor, hendrerit at elit quis, aliquet blandit eros. Nam gravida sem velit, eu placerat nunc commodo ut. <br><br>Maecenas ultricies magna nec nisi egestas, in posuere velit tincidunt. Nam quis turpis non ligula dapibus bibendum sit amet at felis. Vestibulum ornare tempor nulla, quis sodales ex consequat vel. Morbi sollicitudin ligula eget mattis euismod. Nulla scelerisque malesuada arcu a vulputate. Phasellus ac lectus consequat, eleifend libero id, tincidunt lectus. Sed tempus gravida odio, sed semper neque aliquet imperdiet.</p>
+<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
+<p class="uk-margin-xlarge-left">Projects that i've been working on</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <!-- Change all of this to ur projects -->
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Project Name</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="">
+            <span uk-icon="icon: link">
+            </span> Website Link </a>
         </div>
-      </div>
-    </header>
-    <main role="main">
-      <section class="ui-section-content">
-        <div class="ui-layout-container">
-          <!-- COPYWRITING -->
-          <div class="ui-layout-column-6 ui-layout-column-center">
-            <h1>Design better.</h1>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi.</p>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <form action="#" class="ui-component-form ui-layout-grid ui-layout-column-4">
-                <input type="email" placeholder="Email" class="ui-component-input ui-component-input-medium" required>
-                <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Join Waitlist</button>
-              </form>
-              <p class="ui-text-note"><small>Available on Mac, Windows, and Linux.</small></p>
-            </div>
-          </div>
-          <!-- IMAGE -->
-          <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-section-content--image">
-          <!-- FEATURE -->
-          <div class="ui-section-content--feature ui-layout-grid ui-layout-grid-3">
-            <div>
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/bookmark.svg" alt="#" class="ui-section-content--icon">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.</p>
-            </div>
-            <div>
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/chat.svg" alt="#" class="ui-section-content--icon">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.</p>
-            </div>
-            <div>
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/design.svg" alt="#" class="ui-section-content--icon">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="ui-section-close">
-        <div class="ui-layout-container">
-          <div class="ui-layout-column-6 ui-layout-column-center">
-            <h2>Ready to start?</h2>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <form action="#" class="ui-component-form ui-layout-grid ui-layout-column-4">
-                <input type="email" placeholder="Email" class="ui-component-input ui-component-input-medium" required>
-                <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Join Waitlist</button>
-              </form>
-              <p class="ui-text-note"><small>Available on Mac, Windows, and Linux.</small></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer role="contentinfo" class="ui-section-footer">
-      <div class="ui-layout-container">
-        <div class="ui-section-footer__layout ui-layout-flex">
-          <!-- COPYRIGHT -->
-          <p class="ui-section-footer--copyright ui-text-note"><small>&copy; 0000 Uisual</small></p>
-          <!-- MENU -->
-          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Features</small></a>
-          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Help</small></a>
-          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Terms</small></a>
-        </div>
-      </div>
-    </footer>
-  </body>
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Project Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+            </div></div>
+
+
+
+    <br>
+
+
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+</div>
+<!-- Projects Section Ends -->
+    
+</body>
 </html>
